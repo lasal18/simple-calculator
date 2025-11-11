@@ -38,8 +38,16 @@ function subtract() {
 
 // Multiplication function - TO BE IMPLEMENTED BY STUDENT 4
 function multiply() {
-  alert("Multiplication not implemented yet!");
+     
+    const { num1, num2 } = getInputs();
+    if (isNaN(num1) || isNaN(num2)) {
+        displayResult('Please enter valid numbers');
+        return;
+    }
+    const result = num1 * num2;
+    displayResult(result);
 }
+
 
 // Division function - TO BE IMPLEMENTED BY STUDENT 5
 function divide() {
